@@ -136,10 +136,13 @@ a{
     
 }
 
+.menu__list-link--courses,
 .menu__list-link--address,
-.menu__list-link--user,
-.menu__list-item__cities{
-    text-decoration: dashed #000;
+.menu__list-link--user{
+    text-decoration: underline #000;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
 }
 
 /* main */
@@ -342,6 +345,210 @@ a{
 .content__info-text {
     width: 150px;
     font-size: 20px;
+}
+
+/* grid */
+.content__grid-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.news__card{
+    border-radius: 20px;
+}
+/* orange box */
+.news__card-orange{
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    background: #F7BC75;
+}
+
+.orange__card-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    border-radius: 20px;
+    padding: 25px 40px;
+}
+
+.news__card-date{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.news__card-date-num{
+    font-size: 76px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.news__card-date-month{
+    font-size: 26px;
+    line-height: 1;
+}
+
+.news__card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 585px;
+    margin-right: auto;
+}
+
+.news-card__box {
+    max-width: 585px;
+    margin-right: auto;
+}
+
+.news__card-title{
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 72.222% */
+    margin-bottom: 25px;
+    display: block;
+}
+
+.news__card-text{
+    color: var(--Gray-1, #333);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+}
+
+.news__card-btn {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 17px 61px;
+    padding-right: 80px;
+    background: none;
+}
+
+/* blue box */
+.news__card-blue{
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+    background: #C5DDFF;
+    max-height: 460px;
+    width: 480px;
+}
+
+.blue__card-wrap {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    padding: 30px 40px 40px;
+}
+
+
+.news__card-content--blue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 33px;
+    margin-bottom: 50px;
+}
+
+.news__card-title--smaller{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 108.333% */
+    margin: 36px 0;
+}
+
+.news__card-text--smaller{
+    color: var(--Gray-1, #333);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+
+/* green box */
+.news__card-green{
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    background: #B8EFCF;
+    max-height: 220px;
+}
+
+.smaller__card-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 33px;
+}
+
+
+
+/* pink box */
+.news__card-pink{
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+    background: #FFEEF6;
+}
+
+
+/* yellow box */
+.news__card-yellow{
+    grid-column: 2/4;
+    grid-row: 3/4;
+
+    background: #FFE38E;
+}
+
+.yellow__card-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    border-radius: 20px;
+    padding: 57px 80px;
+    gap: 10px;
+}
+
+.yellow-news__card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 400px;
+    margin-right: auto;
+}
+
+.yellow-news__card-title{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+.yellow-news__card-text{
+    color: var(--Gray-1, #333);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
 }
 
 /* @media only screen (max-width: 1200px){
