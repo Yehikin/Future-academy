@@ -672,6 +672,73 @@ a{
     font-weight: 500;
 }
 
+/* helper */
+.help{
+    margin-bottom: -40px;
+}
+
+.owl-help_wrap{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 270px;
+}
+
+.help_owl{
+    margin-top: -16px;
+    margin-left: -90px;
+    margin-right: auto;
+}
+
+.help_form--box{
+    margin-bottom: 20px;
+}
+
+.o-help__input{
+    width: 210px;
+    display: inline-block;
+    padding: 16px 19px;
+    background-color: #dddfe6;
+    border-radius: 6px;
+    border: 2px solid transparent;
+}
+
+.o_help__input--name{
+    width: 440px;
+}
+
+.o_help__input--tel{
+    margin-right: 20px;
+}
+
+.help_form--bottom_box{
+    display: inline-flex;
+}
+
+.o-help__agreement{
+    display: inline-block;
+    font-size: 10px;
+    color: #4f4f4f;
+    margin-right: 22px;
+    max-width: 210px;
+    font-weight: 400;
+}
+
+.o-help__btn{
+    width: 208px;
+    height: 50px;
+    line-height: 1.8;
+    color: #fff;
+    background-color: #f7941d;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    font-weight: 500;
+    font-size: 14px;
+}
+
 
 /* 
 @media screen and (max-width: 992px){
