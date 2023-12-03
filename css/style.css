@@ -812,6 +812,10 @@ a{
     display: flex;
 }
 
+.footer__categories--columns:not(:last-child){
+    margin-right: 60px;
+}
+
 .column__heading{
     margin-bottom: 20px;
     font-size: 16px;
@@ -819,10 +823,9 @@ a{
     font-weight: 700;
 }
 
-.footer__item:not(:last-child) {
+.column__item:not(:last-child) {
     margin-bottom: 15px;
 }
-
 
 /* 
 @media screen and (max-width: 992px){
