@@ -92,7 +92,7 @@ a{
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 
 .header {
@@ -631,6 +631,45 @@ a{
 .study_rate--svg{
     margin-left: 8px;
     margin-right: 8px;
+}
+
+
+/* advantages */
+.advantages{
+    margin-top: 85px;
+}
+
+.adv_headline{
+    font-size: 36px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+}
+
+.adv_lists{
+    display: flex;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+}
+
+.adv_items{
+    margin-right: 20px;
+}
+
+.adv_items--wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.adv_items--svg{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.adv_text{
+    width: 270px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
