@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Future academy</title>
     <link rel="stylesheet" href="css/hamb.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -547,36 +552,174 @@
       <section class="reviews">
         <h4 class="reviews__title">Отзывы наших студентов</h4>
 
-        <div class="reviews__slider">
-
-          <article class="reviews_slider--item">
-            <div class="slider_card">
-              <a href="#" class="student_profile">
-                <div class="profile_wrap">
-                  <picture class="student_pfp">
-                    <img src="images/pfp/1.jpg" alt=""/>
-                  </picture>
-                  <div class="card_profile_text">
-                    <span class="profile_name">Имя Фамилия</span>
-                    <span class="profile_occupation">
-                      Студент курса «WEB-разработчик»
-                    </span>
+        <article class="swiper reviews__slider mySwiper">
+          <div class="swiper-wrapper slides-wrapper">
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/6.jpg" alt=""/>
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
                   </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  voluptatum quisquam sit blanditiis aut est eveniet iste quaerat.
+                  Officiis, dolores!
+                </p>
+                <div class="study_rate">
+                  <svg class="study_rate--svg" width="20px" height="20px" viewBox="0 0 22 20" fill="#F7941D" xmlns="http://www.w3.org/2000/svg"><path d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z" fill="#F7941D"></path></svg>
+                  <span class="rate">4,87 / 5</span>
                 </div>
-              </a>
-              <p class="slider_card_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                voluptatum quisquam sit blanditiis aut est eveniet iste quaerat.
-                Officiis, dolores!
-              </p>
-              <div class="study_rate">
-                <svg class="study_rate--svg" width="20px" height="20px" viewBox="0 0 22 20" fill="#F7941D" xmlns="http://www.w3.org/2000/svg"><path d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z" fill="#F7941D"></path></svg>
-                <span class="rate">4,87 / 5</span>
               </div>
             </div>
-          </article>
+  
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/1.jpg" alt=""/>
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  voluptatum quisquam sit blanditiis aut est eveniet iste quaerat.
+                  Officiis, dolores!
+                </p>
+                <div class="study_rate">
+                  <svg class="study_rate--svg" width="20px" height="20px" viewBox="0 0 22 20" fill="#F7941D" xmlns="http://www.w3.org/2000/svg"><path d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z" fill="#F7941D"></path></svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/1.jpg" alt=""/>
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  voluptatum quisquam sit blanditiis aut est eveniet iste quaerat.
+                  Officiis, dolores!
+                </p>
+                <div class="study_rate">
+                  <svg class="study_rate--svg" width="20px" height="20px" viewBox="0 0 22 20" fill="#F7941D" xmlns="http://www.w3.org/2000/svg"><path d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z" fill="#F7941D"></path></svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/1.jpg" alt=""/>
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  voluptatum quisquam sit blanditiis aut est eveniet iste quaerat.
+                  Officiis, dolores!
+                </p>
+                <div class="study_rate">
+                  <svg class="study_rate--svg" width="20px" height="20px" viewBox="0 0 22 20" fill="#F7941D" xmlns="http://www.w3.org/2000/svg"><path d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z" fill="#F7941D"></path></svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/1.jpg" alt=""/>
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  voluptatum quisquam sit blanditiis aut est eveniet iste quaerat.
+                  Officiis, dolores!
+                </p>
+                <div class="study_rate">
+                  <svg class="study_rate--svg" width="20px" height="20px" viewBox="0 0 22 20" fill="#F7941D" xmlns="http://www.w3.org/2000/svg"><path d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z" fill="#F7941D"></path></svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/1.jpg" alt=""/>
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  voluptatum quisquam sit blanditiis aut est eveniet iste quaerat.
+                  Officiis, dolores!
+                </p>
+                <div class="study_rate">
+                  <svg class="study_rate--svg" width="20px" height="20px" viewBox="0 0 22 20" fill="#F7941D" xmlns="http://www.w3.org/2000/svg"><path d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z" fill="#F7941D"></path></svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        </div>
+          <div class="swiper-scrollbar my-scroll"></div>
+        </article>
+
       </section>
 
       <section class="advantages">
@@ -867,6 +1010,11 @@
         </div>
       </div>
     </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
 
     <script>
       // Look for .hamburger
