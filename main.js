@@ -1,3 +1,14 @@
+// Look for .hamburger
+var hamburger = document.querySelector(".hamburger");
+var menu = document.querySelector(".menu");
+// On click
+hamburger.addEventListener("click", function () {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+  menu.classList.toggle("is-active");
+  // Do something else, like open/close menu
+});
+
 var swiper = new Swiper(".mySwiper", {
     scrollbar: {
         el: ".swiper-scrollbar",
@@ -8,17 +19,29 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
         },
         890: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 20,
         },
-        1220: {
+        1180: {
             slidesPerView: 4,
-            spaceBetween: 40,
-        }
+            spaceBetween: 20,
+        },
+        1480: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        },
+        1780: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+        },
+        2070: {
+            slidesPerView: 7,
+            spaceBetween: 20,
+        },
     },
 });
 
