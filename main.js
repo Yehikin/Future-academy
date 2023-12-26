@@ -1,6 +1,6 @@
 // Look for .hamburger
-var hamburger = document.querySelector(".hamburger");
-var menu = document.querySelector(".menu");
+let hamburger = document.querySelector(".hamburger");
+let menu = document.querySelector(".menu");
 // On click
 hamburger.addEventListener("click", function () {
   // Toggle class "is-active"
@@ -8,6 +8,7 @@ hamburger.addEventListener("click", function () {
   menu.classList.toggle("is-active");
   // Do something else, like open/close menu
 });
+
 
 var swiper = new Swiper(".mySwiper", {
     scrollbar: {
@@ -19,6 +20,10 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
         // when window width is >= 320px
         320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        375: {
             slidesPerView: 1,
             spaceBetween: 20,
         },
@@ -44,6 +49,7 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
 });
+
 
 AOS.init();
 
