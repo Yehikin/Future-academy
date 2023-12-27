@@ -9,6 +9,39 @@ hamburger.addEventListener("click", function () {
   // Do something else, like open/close menu
 });
 
+// let filterTabs = document.querySelector(".filter_tabs__item");
+// let filterLists = document.querySelector(".filter__list");
+
+// filterTabs.addEventListener("click", function () {
+//     filterTabs.classList.toggle("is-active");
+//     filterLists.classList.toggle("is-active");
+// });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.filter_tabs__item');
+  
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        tabs.forEach(function (otherTab) {
+          if (otherTab !== tab) {
+            otherTab.classList.remove('is-active');
+          }
+        });
+  
+        tab.classList.toggle('is-active');
+  
+        const targetId = tab.getAttribute('data-target');
+  
+        const targetUl = document.querySelector(`.${targetId}`);
+  
+        if (targetUl) {
+          targetUl.classList.toggle('is-active');
+        }
+      });
+    });
+});
+  
 
 var swiper = new Swiper(".mySwiper", {
     scrollbar: {
