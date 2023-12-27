@@ -1,80 +1,1202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Future academy</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/hamb.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
     <header class="header">
-        <div class="container">
-            <nav class="header__nav">
-                <a class="logo" href="#footer">
-                    <picture>
-                      <source srcset="img/icons/logo-mobile.svg" media="(max-width: 768px)">
-                      <img class="logo__img" src="img/icons/logo.svg" alt="logo">
-                    </picture>
-                </a>
-    
-                <div class="menu">
-                    <ul class="menu__list">
-            
-                      <li class="menu__list-item">
-                        <a class="menu__list-link menu__list-link--hover menu__list-link--courses" href="#">
-                          Все курсы
-                        </a>
-                      </li>
-            
-                      <li class="menu__list-item">
-                        <a class="menu__list-link menu__list-link--hover" href="#events">
-                          Мероприятия
-                        </a>
-                      </li>
-            
-                      <li class="menu__list-item">
-                        <a class="menu__list-link menu__list-link--hover" href="#">
-                          Базы знаний
-                        </a>
-                      </li>
-            
-                      <li class="menu__list-item">
-                        <a class="menu__list-link menu__list-link--hover" href="#">
-                          Карьера
-                        </a>
-                      </li>
-            
-                    </ul>
-            
-                    <ul class="menu__list">
-            
-                      <li class="menu__list-item">
-                        <a class="menu__list-link menu__list-link--address" href="#">
-                          Нижний Новгород
-                        </a>
-                      </li>
-            
-                      <li class="menu__list-item">
-                        <a class="menu__list-link menu__list-link--hover menu__list-link--tel" href="tel:+88009503398">
-                          8 800 950-33-98
-                        </a>
-                      </li>
-            
-                      <li class="menu__list-item">
-                        <a class="menu__list-link menu__list-link--hover menu__list-link--user" href="#">
-                          Войти
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-            </nav>
+      <nav class="header__nav container">
+        <a class="logo" href="#footer">
+          <picture>
+            <source
+              srcset="images/icons/logo-mobile.svg"
+              media="(max-width: 768px)"
+            />
+            <img class="logo__img" src="images/icons/logo.svg" alt="logo" />
+          </picture>
+        </a>
+
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item menu__list-link--courses">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
+                <rect x="1" y="1.51392" width="18" height="4.99717" rx="1" stroke="#00093C" stroke-width="2"/>
+                <rect x="1" y="10.4858" width="18" height="5" rx="1" stroke="#00093C" stroke-width="2"/>
+              </svg>
+              <a class="menu__list-link" href="#content"> Все курсы </a>
+            </li>
+
+            <li class="menu__list-item">
+              <a class="menu__list-link__with-underline" href="#">
+                Мероприятия
+              </a>
+            </li>
+
+            <li class="menu__list-item">
+              <a class="menu__list-link__with-underline" href="#">
+                Базы знаний
+              </a>
+            </li>
+
+            <li class="menu__list-item">
+              <a class="menu__list-link__with-underline" href="#"> Карьера </a>
+            </li>
+
+            <li class="menu__list-item menu__list-link--address">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 17 20" fill="none">
+                <path d="M16 8.5C16 11.3282 14.13 13.9545 12.0535 15.9699C11.036 16.9575 10.0146 17.754 9.24613 18.304C8.95504 18.5123 8.70155 18.6843 8.5 18.8171C8.29845 18.6843 8.04496 18.5123 7.75387 18.304C6.98537 17.754 5.96395 16.9575 4.94648 15.9699C2.86999 13.9545 1 11.3282 1 8.5C1 4.35786 4.35786 1 8.5 1C12.6421 1 16 4.35786 16 8.5Z" stroke="#00093C" stroke-width="2"/>
+                <circle cx="8.5" cy="7.5" r="2.5" fill="#00093C"/>
+              </svg>
+              <a class="menu__list-link" href="#"> Нижний Новгород </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 10 7" fill="none">
+                <path d="M1 1L5 5L9 1" stroke="#00093C" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </li>
+
+            <li class="menu__list-item">
+              <a
+                class="menu__list-link__with-underline menu__list-link--tel"
+                href="tel:+88009503398"
+              >
+                8 800 950-33-98
+              </a>
+            </li>
+
+            <li class="menu__list-item">
+              <a class="menu__list-link menu__list-link--user" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                  <rect x="5.18024" y="1" width="6.63833" height="8.41108" rx="3.31917" stroke="#00093C" stroke-width="2"/>
+                  <path d="M1 15.4111C1 13.7543 2.34315 12.4111 4 12.4111H13.2795C14.9364 12.4111 16.2795 13.7543 16.2795 15.4111V16.3229C16.2795 16.8752 15.8318 17.3229 15.2795 17.3229H2C1.44772 17.3229 1 16.8752 1 16.3229V15.4111Z" stroke="#00093C" stroke-width="2"/>
+                </svg>
+                Войти
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </nav>
     </header>
 
-    <main></main>
+    <main class="main">
+      <section
+        class="top-picture"
+        style="background-image: url('images/background/darker-bg.png')"
+      >
+        <div class="top-picture__text container">
+          <h2 class="top-picture__title">
+            Образовательная платформа
+            <span>ХОД Future Academy</span>
+          </h2>
+          <p class="top-picture__subtitle">
+            Актуальные знания для новичков и профессионалов
+          </p>
+        </div>
+      </section>
 
-    <footer>something</footer>
+      <section class="content" id="content">
+        <div class="container">
+          <div class="filter" data-aos="fade-up">
+            <picture class="filter_img">
+              <source
+                src="images/owl/owl-mobile.svg"
+                media="(max-width:1190px)"
+              />
+              <img
+                class="owl_img--mobile"
+                src="images/owl/owl-mobile.svg"
+                alt="owl_img"
+              />
+              <img class="owl_img" src="images/owl/owl.svg" alt="owl_img" />
+            </picture>
+            <div class="filter_tabs">
+              <ul class="filter_tabs__list">
+                <li class="filter_tabs__item is-active">
+                  <img class="filter_tabs__link--img" src="images/icons/children.svg" alt="#"/>
+                  <a class="filter_tabs__link filter_tabs__link--active" href="#tab-1">
+                    Дети
+                    <span>8 — 14 лет</span>
+                  </a>
+                </li>
 
-</body>
+                <li class="filter_tabs__item">
+                  <img src="images/icons/teenagers.svg" alt="" class="filter_tabs__link--img"/>
+                  <a class="filter_tabs__link filter_tabs__link--teenagers" href="#tab-2">
+                    Подростки
+                    <span>14 — 18 лет</span>
+                  </a>
+                </li>
+
+                <li class="filter_tabs__item">
+                  <img src="images/icons/adults.svg" alt="" class="filter_tabs__link--img"/>
+                  <a class="filter_tabs__link filter_tabs__link--adults" href="#tab-3">
+                    Взрослые
+                    <span>18 — ∞</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="filter_tabs__content">
+                <div class="filter_tabs__content-item">
+                  <ul class="filter__list f__l--1 is-active">
+                    <li class="filter__item">
+                      <a class="filter__link" href="#"> Робототехника </a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#"> Создание игр </a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#"> Web-разработка </a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#"> Мультимедиа </a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#"> Шахматы </a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#"
+                        >3D-моделирование и дизайн</a
+                      >
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#"> Английский язык </a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#"> Блогинг </a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#"> Soft skills </a>
+                    </li>
+                  </ul>
+
+                  <ul class="filter__list f__l--2">
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Web-разработка</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Прикладное программирование</a
+                      >
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Графическое моделирование</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Game Development</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Soft skills</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Разработчик мобильных приложений</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Блогинг</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Создание игр</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Программирование</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Мультимедиа</a>
+                    </li>
+                  </ul>
+
+                  <ul class="filter__list f__l--3">
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Разработчик игр на Unity</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Разработка ПО</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Графический Дизайн</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Тестировщик ПО</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Интернет Маркетинг</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Java-разработчик</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Python–разработчик</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">IOS-разработчик</a>
+                    </li>
+                    <li class="filter__item">
+                      <a class="filter__link" href="#">Программирование</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content__video" data-aos="fade-up">
+            <div class="video__wrap-with-svg">
+              <svg
+                class="triangle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="165"
+                height="137"
+                viewBox="0 0 165 137"
+                fill="none"
+              >
+                <path
+                  d="M78.8653 2.94796L78.8698 2.94045C80.3996 0.390727 84.0096 0.307454 85.7956 2.96528L162.984 129.098L162.989 129.106C164.772 131.959 162.757 135.77 159.524 135.77H82.3251H5.12573C1.89957 135.77 -0.135345 132.171 1.67051 129.09C1.67196 129.088 1.6734 129.085 1.67485 129.083L78.8653 2.94796Z"
+                  fill="white"
+                  stroke="url(#paint0_linear_1_26)"
+                  stroke-width="2"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1_26"
+                    x1="0"
+                    y1="68.385"
+                    x2="164.65"
+                    y2="68.385"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#F7941D" />
+                    <stop offset="1" stop-color="#27AAE1" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <svg
+                class="bottom-left_line"
+                xmlns="http://www.w3.org/2000/svg"
+                width="281"
+                height="132"
+                viewBox="0 0 281 132"
+                fill="none"
+              >
+                <path
+                  d="M0 131H150L280 1"
+                  stroke="url(#paint0_linear_1_27)"
+                  stroke-width="2"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1_27"
+                    x1="0"
+                    y1="66"
+                    x2="280"
+                    y2="66"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#F7941D" />
+                    <stop offset="1" stop-color="#27AAE1" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <div class="video__wrap">
+                <video src="#" poster="images/background/video-img.jpg"></video>
+                <a class="content__video-link" href="#">
+                  <img
+                    class="content__video-img"
+                    src="images/icons/play.svg"
+                    alt="play"
+                  />
+                </a>
+              </div>
+
+              <svg
+                class="top-right_line"
+                xmlns="http://www.w3.org/2000/svg"
+                width="352"
+                height="351"
+                viewBox="0 0 352 351"
+                fill="none"
+              >
+                <path
+                  d="M1 0V180H181L351 350"
+                  stroke="url(#paint0_linear_1_28)"
+                  stroke-width="2"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1_28"
+                    x1="1"
+                    y1="175"
+                    x2="351"
+                    y2="175"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#F7941D" />
+                    <stop offset="1" stop-color="#27AAE1" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <svg
+                class="cross"
+                xmlns="http://www.w3.org/2000/svg"
+                width="230"
+                height="230"
+                viewBox="0 0 230 230"
+                fill="none"
+              >
+                <path
+                  d="M226.71 58.8085L226.691 58.8261L226.672 58.8447L177.056 108.461C173.521 111.996 173.521 118.22 177.056 121.755L226.672 171.372C229.426 174.126 229.426 179.083 226.672 181.838L181.598 226.912C178.844 229.666 173.887 229.666 171.133 226.912L121.516 177.295C117.981 173.76 111.757 173.76 108.222 177.295L58.6054 226.912C55.8512 229.666 50.8939 229.666 48.1397 226.912L3.06563 181.838C0.311455 179.083 0.311455 174.126 3.06563 171.372L52.682 121.755C56.2172 118.22 56.2172 111.996 52.682 108.461L3.06563 58.8447C0.311455 56.0906 0.311456 51.1331 3.06563 48.3789L48.1397 3.30489C50.8939 0.550713 55.8512 0.550713 58.6054 3.30489L108.222 52.9213C111.757 56.4565 117.981 56.4565 121.516 52.9213L171.133 3.30489C173.887 0.550713 178.844 0.550713 181.598 3.30489L226.672 48.3789C229.798 51.5044 229.741 56.0808 226.71 58.8085Z"
+                  fill="white"
+                  stroke="url(#paint0_linear_1_22)"
+                  stroke-width="2"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1_22"
+                    x1="0"
+                    y1="115.108"
+                    x2="230"
+                    y2="115.108"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#F7941D" />
+                    <stop offset="1" stop-color="#27AAE1" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="content__info" data-aos="fade-right">
+            <h3 class="content__info-title">
+              Актуальные знания от признанных экспертов рынка для новичков и
+              практикующих специалистов.
+            </h3>
+
+            <ul class="content__info-list">
+              <li class="content__info-item">
+                <span class="content__info-num">600</span>
+                <span class="content__info-text">Курсов</span>
+              </li>
+              <li class="content__info-item">
+                <span class="content__info-num">82</span>
+                <span class="content__info-text">Ведущих преподавателей</span>
+              </li>
+              <li class="content__info-item">
+                <span class="content__info-num">14 795</span>
+                <span class="content__info-text">Выпускников</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="content__grid" data-aos="fade-up">
+            <ul class="content__grid-list">
+              <li class="news__card news__card-orange" data-aos="fade-up">
+                <div class="orange__card-wrap">
+                  <div class="news__card-date">
+                    <span class="news__card-date-num">25</span>
+                    <span class="news__card-date-month">Ноября</span>
+                  </div>
+
+                  <div class="news__card-content">
+                    <h4 class="news__card-title">День открытых дверей</h4>
+                    <p class="news__card-text">
+                      Приглашаем всех желающих на бесплатную экскурсию в мир
+                      востребованных профессий и полезных навыков
+                    </p>
+                  </div>
+
+                  <button class="news__card-btn">
+                    Записаться
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.87354 1.99658L7.68115 7.56201L1.87354 12.9655"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="news__card news__card-blue" data-aos="fade-up">
+                <article class="blue__card-wrap">
+                  <div class="news__card-content--blue">
+                    <svg
+                      width="78"
+                      height="79"
+                      viewBox="0 0 78 79"
+                      fill="#000"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        x="0.223511"
+                        y="0.77417"
+                        width="77.553"
+                        height="77.553"
+                        fill="url(#pattern0)"
+                      />
+                      <defs>
+                        <pattern
+                          id="pattern0"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                          height="1"
+                        >
+                          <use
+                            xlink:href="#image0_64_4153"
+                            transform="scale(0.0078125)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_64_4153"
+                          width="128"
+                          height="128"
+                          xlink:href="data:image/png;base64,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"
+                        />
+                      </defs>
+                    </svg>
+                    <h4 class="news__card-title--smaller">
+                      Программы обучения
+                    </h4>
+                    <p class="news__card-text--smaller">
+                      В списке наших курсов вы сможете найти профессию и занятие
+                      по душе, изучить новое и получить практические знания,
+                      которые помогут получить работу мечты.
+                    </p>
+                  </div>
+
+                  <button class="news__card-btn">
+                    Подробнее
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.87354 1.99658L7.68115 7.56201L1.87354 12.9655"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </button>
+                </article>
+              </li>
+              <li class="news__card news__card-green" data-aos="fade-up">
+                <article class="smaller__card-wrap">
+                  <svg
+                    width="70"
+                    height="70"
+                    viewBox="0 0 70 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      x="0.816895"
+                      y="0.77417"
+                      width="68.4853"
+                      height="68.4853"
+                      fill="url(#pattern0)"
+                    />
+                    <defs>
+                      <pattern
+                        id="pattern0"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_64_4154"
+                          transform="scale(0.0078125)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_64_4154"
+                        width="128"
+                        height="128"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+                  <h4 class="news__card-title--smaller">Новости Академии</h4>
+                </article>
+              </li>
+              <li class="news__card news__card-pink" data-aos="fade-up">
+                <div class="smaller__card-wrap">
+                  <img src="images/icons/diagram.svg" alt="" />
+                  <h4 class="news__card-title--smaller">Мир IT</h4>
+                </div>
+              </li>
+
+              <li class="news__card news__card-yellow" data-aos="fade-up">
+                <div class="yellow__card-wrap">
+                  <img
+                    class="yellow__svg-try"
+                    src="images/icons/try.svg"
+                    alt=""
+                  />
+                  <div class="yellow-news__card-content">
+                    <h4 class="yellow-news__card-title">Попробуй!</h4>
+                    <p class="yellow-news__card-text">
+                      Пройдите тест и узнайте свои способности в сфере
+                      информационных технологий
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" data-aos="fade-up">
+        <h4 class="reviews__title">Отзывы наших студентов</h4>
+
+        <article class="swiper reviews__slider mySwiper">
+          <div class="swiper-wrapper slides-wrapper">
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/6.jpg" alt="" />
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius. In
+                  hac habitasse platea dictumst. In ut dui sodales.
+                </p>
+                <div class="study_rate">
+                  <svg
+                    class="study_rate--svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 22 20"
+                    fill="#F7941D"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z"
+                      fill="#F7941D"
+                    ></path>
+                  </svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/2.jpg" alt="" />
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius.
+                </p>
+                <div class="study_rate">
+                  <svg
+                    class="study_rate--svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 22 20"
+                    fill="#F7941D"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z"
+                      fill="#F7941D"
+                    ></path>
+                  </svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/1.jpg" alt="" />
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius. In
+                  hac habitasse platea dictumst. In ut dui sodales, scelerisque
+                  eros non, ultrices magna.
+                </p>
+                <div class="study_rate">
+                  <svg
+                    class="study_rate--svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 22 20"
+                    fill="#F7941D"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z"
+                      fill="#F7941D"
+                    ></path>
+                  </svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/4.jpg" alt="" />
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  voluptatum quisquam sit blanditiis aut est eveniet iste
+                  quaerat. Officiis, dolores!
+                </p>
+                <div class="study_rate">
+                  <svg
+                    class="study_rate--svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 22 20"
+                    fill="#F7941D"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z"
+                      fill="#F7941D"
+                    ></path>
+                  </svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/3.jpg" alt="" />
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  voluptatum quisquam sit blanditiis aut est eveniet iste
+                  quaerat. Officiis, dolores!
+                </p>
+                <div class="study_rate">
+                  <svg
+                    class="study_rate--svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 22 20"
+                    fill="#F7941D"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z"
+                      fill="#F7941D"
+                    ></path>
+                  </svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/1.jpg" alt="" />
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius. In
+                  hac habitasse platea dictumst. In ut dui sodales.
+                </p>
+                <div class="study_rate">
+                  <svg
+                    class="study_rate--svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 22 20"
+                    fill="#F7941D"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z"
+                      fill="#F7941D"
+                    ></path>
+                  </svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide reviews_slider--item">
+              <div class="slider_card">
+                <a href="#" class="student_profile">
+                  <div class="profile_wrap">
+                    <picture class="student_pfp">
+                      <img src="images/pfp/2.jpg" alt="" />
+                    </picture>
+                    <div class="card_profile_text">
+                      <span class="profile_name">Имя Фамилия</span>
+                      <span class="profile_occupation">
+                        Студент курса «WEB-разработчик»
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <p class="slider_card_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  Curabitur pellentesque est bibendum urna facilisis varius.
+                </p>
+                <div class="study_rate">
+                  <svg
+                    class="study_rate--svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 22 20"
+                    fill="#F7941D"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9345 0L14.2124 6.42295L21.3339 7.55557L16.2382 12.6578L17.3617 19.7807L10.9345 16.5111L4.50737 19.7807L5.63085 12.6578L0.535173 7.55557L7.65667 6.42295L10.9345 0Z"
+                      fill="#F7941D"
+                    ></path>
+                  </svg>
+                  <span class="rate">4,87 / 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-scrollbar my-scroll"></div>
+        </article>
+      </section>
+
+      <section class="advantages" data-aos="fade-up">
+        <div class="container">
+          <h3 class="adv_headline">Добро пожаловать в Академию будущего ХОД</h3>
+          <ul class="adv_lists">
+            <li class="adv_items">
+              <div class="adv_items--wrap">
+                <img
+                  class="adv_items--svg"
+                  src="images/icons/settings.svg"
+                  alt=""
+                />
+                <p class="adv_text">
+                  Передовой подход к образовательному процессу
+                </p>
+              </div>
+            </li>
+
+            <li class="adv_items">
+              <div class="adv_items--wrap">
+                <img
+                  class="adv_items--svg"
+                  src="images/icons/book.svg"
+                  alt=""
+                />
+                <p class="adv_text">
+                  Непрерывное усовершенствование и пополнение базы курсов
+                </p>
+              </div>
+            </li>
+
+            <li class="adv_items">
+              <div class="adv_items--wrap">
+                <img
+                  class="adv_items--svg"
+                  src="images/icons/teacher.svg"
+                  alt=""
+                />
+                <p class="adv_text">Только практикующие преподаватели</p>
+              </div>
+            </li>
+
+            <li class="adv_items">
+              <div class="adv_items--wrap">
+                <img
+                  class="adv_items--svg"
+                  src="images/icons/human.svg"
+                  alt=""
+                />
+                <p class="adv_text">
+                  Сопровождение на всех этапах. От начала обучения до
+                  трудоустройства
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="help" data-aos="fade-right">
+        <div class="owl-help-wrap">
+          <picture class="help_owl">
+            <source
+              srcset="images/owl/owl-help-mobile.svg"
+              media="(max-width:768px)"
+            />
+            <img src="images/owl/owl-help.svg" alt="" />
+          </picture>
+          <form class="help_form" action="#">
+            <div class="help_form--box">
+              <input
+                class="o-help__input o_help__input--name"
+                type="text"
+                placeholder="Ваше имя"
+                required=""
+              />
+            </div>
+            <div class="help_form--box">
+              <input
+                class="o-help__input o_help__input--tel"
+                type="tel"
+                placeholder="Ваш телефон"
+                required=""
+              />
+              <input
+                class="o-help__input"
+                type="email"
+                placeholder="Ваш e-mail"
+                required=""
+              />
+            </div>
+            <div class="help_form--bottom_box">
+              <p class="o-help__agreement">
+                Нажимая на кнопку, я соглашаюсь на обработку персональных данных
+                и с правилами пользования <br />
+                Платформой
+              </p>
+              <button class="o-help__btn" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="container">
+        </div> -->
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <article class="footer__contacts">
+            <a href="#header" class="logo">
+              <img src="images/icons/logo-white.svg" alt="" />
+            </a>
+
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--tel"
+                    href="tel:+88009503398"
+                  >
+                    8 800 950-33-98
+                  </a>
+                </li>
+
+                <li class="address__item">
+                  <a class="address__link" href="#">
+                    г. Москва, ул. Ленина, д. 50
+                  </a>
+                </li>
+
+                <li class="address__item">
+                  <a
+                    class="address__link"
+                    href="mailto:info@hodfutureacademy.ru"
+                  >
+                    info@hodfutureacademy.ru
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img
+                      src="images/icons/vk.svg"
+                      alt=""
+                      class="socials__img"
+                    />
+                  </a>
+                </li>
+
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img
+                      src="images/icons/insta.svg"
+                      alt=""
+                      class="socials__img"
+                    />
+                  </a>
+                </li>
+
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img
+                      src="images/icons/fb.svg"
+                      alt=""
+                      class="socials__img"
+                    />
+                  </a>
+                </li>
+
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img
+                      src="images/icons/yt.svg"
+                      alt=""
+                      class="socials__img"
+                    />
+                  </a>
+                </li>
+
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img
+                      src="images/icons/tg.svg"
+                      alt=""
+                      class="socials__img"
+                    />
+                  </a>
+                </li>
+              </ul>
+
+              <a href="#" class="copyrights">© ХОД, Future Academy</a>
+            </address>
+          </article>
+
+          <nav class="footer__categories">
+            <div class="footer__categories--columns">
+              <p class="column__heading">Детям</p>
+              <ul class="column__list">
+                <li class="column__item">
+                  <a class="column__link" href="#">Робототехника</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Создание игр</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Программирование</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Мультимедиа</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Soft skills</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Шахматы</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Блогинг</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Создание игр</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Программирование</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Мультимедиа</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Soft skills</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__categories--columns">
+              <p class="column__heading">Подросткам</p>
+              <ul class="column__list">
+                <li class="column__item">
+                  <a class="column__link" href="#">Web-разработка</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#"
+                    >Прикладное программирование</a
+                  >
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Графическое моделирование</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Game Development</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Soft skills</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#"
+                    >Разработчик мобильных приложений</a
+                  >
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Блогинг</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Создание игр</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Программирование</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Мультимедиа</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__categories--columns">
+              <p class="column__heading">Взрослым</p>
+              <ul class="column__list">
+                <li class="column__item">
+                  <a class="column__link" href="#">Разработчик игр на Unity</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Разработка ПО</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Графический Дизайн</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Тестировщик ПО</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Интернет Маркетинг</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Java-разработчик</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Python–разработчик</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">IOS-разработчик</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Программирование</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__categories--columns">
+              <p class="column__heading">Информация</p>
+              <ul class="column__list">
+                <li class="column__item">
+                  <a class="column__link" href="#">Об академии</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Мероприятия</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Новости</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">База знаний</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Карьера</a>
+                </li>
+                <li class="column__item">
+                  <a class="column__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
